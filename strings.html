@@ -1,0 +1,79 @@
+<!-- Kolby Lamb CS102 02/02/25-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is it a Palindrome?</title>
+    <link rel="stylesheet" href="Priority.css">
+</head>
+<body>
+    
+   
+    
+    <H1 class="heading">
+         Palindromes
+    </H1>
+    <nav>
+        <h2>Navigation</h2>
+        <a href="./home.html">Home</a><br>
+        <a href="./boards.html">Boards</a><br>
+        <a href="./game.html">Game</a><br>
+        <a href="./strings.html">Strings</a><br>
+        <a href="./index.html">Meme</a><br>
+    </nav>
+    <h2>
+
+        <form id="palindromeForm" onsubmit="return false">
+
+            <p>Check if a word is a Palindrome <input type ="text" id="userInput"/>
+            <input class="btn" type="submit" onclick = "checkPal();"/></p>
+        </form>
+        <p id="results">
+                Results:
+        </p>
+    
+    </h2>
+    <br>
+         
+    <h3 id="loginStatus">
+        Login to Play Craps
+
+
+    </h3>
+    <br>
+    <!-- return false makes sure we can navigate to the other pages-->
+    <form id="credSubmit" onsubmit ="return false">
+        <!--I added required to give a line alert for if its left blank-->
+        First Name:<input type="text" id="fName" required/>
+        <br>
+        <br>
+        Last name: <input type="text" id="lName"required/>
+        <br>
+        <br>
+        Zip code: <input type="number" id="Zip" required/> 
+        <br>
+        <br>
+        Password: <input type="password" id="password" required/>
+        <!--Password is "UATRocks"-->
+        <br>
+        <br>
+        <input type="submit" class="credbut" onclick="checkCreds();" required>
+    </form>
+<br>
+  <br>
+  
+    <div class="audioContain">
+        <!--creates the audio control, play, volume and playback speed-->
+        <audio class="audio" controls>
+            <source src="Space Station.mp3" type="audio/mp3">
+            <!--if the browser wont allow music this will show-->
+            Your browser does not support the audio element.
+          </audio>
+    </div>
+    
+
+
+    <script src="Palindrome2.js"></script>
+</body>
+</html>
